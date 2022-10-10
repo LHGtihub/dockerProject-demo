@@ -2,6 +2,7 @@
 FROM jdk8:1.0
 #作者
 MAINTAINER LH
+#指定字符集很重要
 ENV  LANG C.UTF-8
 #执行命令
 RUN mkdir  -p /opt/module/backend/cindasc/apps-cindasc-cms
