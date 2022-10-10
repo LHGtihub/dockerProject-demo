@@ -1,0 +1,37 @@
+# 模块信息
+project: cindasc
+module: cms
+version: v1
+spring: 
+ application: 
+  name: joyadata-cms-cindasc
+
+# 服务信息
+app_port: 8890
+app_log_enable: false
+app_autoddl_enable: true
+
+# 数据库信息
+app_db_ip: 192.168.160.76
+app_db_port: 3306
+app_db_dbname: cindasc_joyadata
+app_db_username: root
+app_db_password: joyadata
+
+# 注册中心信息
+app_registry_ip: 192.168.160.76
+app_registry_port: 8848
+app_registry_client_register: true
+app_registry_username: nacos
+app_registry_password: nacos
+
+# 配置中心
+app_config_ip: 192.168.160.76
+app_config_port: 8848
+app_config_client_register: true
+app_config_username: nacos
+app_config_password: nacos
+
+# 网关
+app_gatewat_http: http://192.168.160.77:8858
+
