@@ -10,6 +10,7 @@ CONTAINER_NAME=apps-cindasc-cms
 #获取镜像容器全id
 CONTAINER_ID=$(docker ps --no-trunc -a|grep ${CONTAINER_NAME}|awk '{print $1}')
 echo "获取到的容器的id为：${CONTAINER_ID}"
+#将容器中的日志情空
 echo > /var/lib/docker/containers/$CONTAINER_ID/$CONTAINER_ID-json.log
 if test -z $CONTAINER_ID
 then
